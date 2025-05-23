@@ -25,7 +25,7 @@ export default function DefaultLayout({
 
   return (
     <>
-      <Header />
+      <Header nav={false}/>
       
       <main className="grow">
 
