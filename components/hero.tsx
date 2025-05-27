@@ -21,9 +21,9 @@ export default function Hero() {
             <div data-aos="zoom-out">
               <div className="relative text-sm text-gray-300 bg-gray-800 rounded-full inline-block px-4 py-1 mb-6 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-linear-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
                 <div className="text-gray-400">
-                  Launching Infinite Workspaces.{' '}
+                  Plataformas y equipos de análisis especializados.{' '}
                   <a className="font-medium text-blue-500 inline-flex items-center transition duration-150 ease-in-out group" href="#0">
-                    Learn More{' '}
+                    Conoce Más{' '}
                     <span className="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                   </a>
                 </div>
@@ -42,7 +42,7 @@ export default function Hero() {
             >
               <div>
                 <a className="btn text-white bg-linear-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group" href="#0">
-                  Get Started For Free{' '}
+                  Equipos de Alta Tecnología{' '}
                   <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
