@@ -50,7 +50,7 @@ export default function Hero() {
               </div>
               <div>
                 <a className="btn text-gray-300 bg-linear-to-t from-gray-800 to-gray-700 hover:to-gray-800 w-full shadow-lg" href="#0">
-                  Explore Docs
+                  Equipos Clásicos
                 </a>
               </div>
             </div>

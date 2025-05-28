@@ -1,12 +1,12 @@
 export const metadata = {
-  title: 'Home - Neon',
+  title: 'Home - Hi-Tech Rehab & Sport',
   description: 'Page description',
 }
 
 import Hero from '@/components/hero'
 import PressLogos from '@/components/press-logos'
-import Features from '@/components/features'
-import Features02 from '@/components/features-02'
+import EquiposAltaTech from '@/components/equipos-atla-tech'
+import PlataformasEquiposAnalisisEsp from '@/components/plataformas-equipo-analisis-esp'
 import Pricing from '@/components/pricing'
 import Testimonials from '@/components/testimonials'
 import Resources from '@/components/resources'
@@ -17,9 +17,9 @@ export default function Home() {
     <>
       <Hero />
       <PressLogos />
-      <Features />
-      <Features02 />
-      <Pricing />
+      <EquiposAltaTech />
+      <PlataformasEquiposAnalisisEsp />
+      {/* <Pricing /> */}
       <Testimonials />
       <Resources />
       <Cta />

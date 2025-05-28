@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Illustration from '@/public/images/features-illustration.svg'
 import FeaturesImage from '@/public/images/features-02.png'
 
-export default function Features02() {
+export default function PlataformasEquiposAnalisisEsp() {
   return (
     <section className="relative">
       {/* Bg gradient */}
