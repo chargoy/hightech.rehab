@@ -10,52 +10,61 @@ import { TechItem } from './tech-item'
 export const techItems = [
   {
     title: "Sistema Super Inductivo",
-    description: "Generador eletromagnético de alta intensidad de hasta 2.5 teslas que ayuda tanto a los tejidos musculares como el sistema nervioso",
+    description:
+      "Generador electromagnético de hasta 2.5 teslas que ayuda a los tejidos musculares y el sistema nervioso.",
     Icon: Btl,
     colorClass: "fill-sky-500",
   },
   {
     title: "Láser de Alta Potencia",
-    description: "Equipo de luz láser de NdYAG que acelera los procesos metabólicos que favorecen la cicatrización de tejidos así como el control del dolor",
+    description:
+      "Luz láser Nd:YAG que favorece la cicatrización y el control del dolor al acelerar procesos metabólicos.",
     Icon: Btl,
     colorClass: "fill-sky-500",
   },
   {
     title: "Tercaterapia Capacitiva y Resistiva",
-    description: "Equipo que mediante radiofrecuencia logra un calor más profundo en los tejios acelerando la respuesta metabólica y favoreciendo la recuperación",
+    description:
+      "Radiofrecuencia que genera calor profundo en los tejidos para acelerar el metabolismo y la recuperación.",
     Icon: Btl,
     colorClass: "fill-sky-500",
   },
   {
     title: "Ondas de Presión (Choque) Radiales",
-    description: "ondas sonoras de alta energia que tienen como fin estimular la liberación de factores de crecimiento esenciales para la recuperación de tejidos lesionados, especialmente tendones, musculos, fascias",
+    description:
+      "Ondas sonoras de alta energía que estimulan la liberación de factores de crecimiento esenciales para sanar músculos, tendones y fascias.",
     Icon: Btl,
     colorClass: "fill-sky-500",
   },
   {
     title: "Ondas de Choque Focales",
-    description: "ondas sonoras de alta energia que tienen como fin estimular la liberación de factores de crecimiento esenciales para la recuperación de tejidos lesionados, especialmente tendones y hueso, asi como para el tratamiento de calcificaciones",
+    description:
+      "Ondas sonoras de alta energía que estimulan la recuperación de tendones, hueso y ayudan en casos de calcificaciones.",
     Icon: Btl,
     colorClass: "fill-sky-500",
   },
   {
     title: "Deep Osilation",
-    description: "equipo que utiliza impulsos electrostaticos sobre los tejidos para mejora la cicatrizacion y favorecer la recuperacion a diferentes profundidades, ayudante tambien al control de dolor",
+    description:
+      "Impulsos electrostáticos que favorecen la cicatrización y el alivio del dolor en capas profundas.",
     Icon: Physiomed,
     colorClass: "fill-sky-500",
     customSize: "w-64 h-20",
   },
   {
     title: "MAD UP Pro",
-    description: "equipo que utiliza impulsos electrostaticos sobre los tejidos para mejora la cicatrizacion y favorecer la recuperacion a diferentes profundidades, ayudante tambien al control de dolor",
+    description:
+      "Sistema de entrenamiento y monitoreo que utiliza restricción de flujo sanguíneo para potenciar la fuerza y el desarrollo muscular con menor carga física, generando estrés metabólico controlado",
   },
   {
     title: "Blaze Pod",
-    description: "sistema de entrenamiento de reacción coordinacion y agilidad mediante estimulos visuales",
+    description:
+      "Sistema de entrenamiento visual que mejora la reacción, coordinación y agilidad mediante estímulos de luz.",
   },
   {
     title: "Handy Gym",
-    description: "un sistema de entrenamiento de fuerza isoinicercial que permite que los musculos trabajen de manera efectiva en todo el rango de movimiento",
+    description:
+      "Dispositivo de fuerza isoinercial que trabaja el músculo eficazmente durante todo el rango de movimiento.",
   },
 ];
 
