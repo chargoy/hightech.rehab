@@ -6,6 +6,9 @@ import Alta3Image from '@/public/images/alta3.jpeg'
 import Btl from './logo/btl'
 import Physiomed from './logo/physiomed'
 import { TechItem } from './tech-item'
+import MadUp from "./logo/mad-up";
+import BlazePod from "./logo/blaze-pod";
+import HandyGym from "./logo/handy-gym";
 
 export const techItems = [
   {
@@ -13,58 +16,57 @@ export const techItems = [
     description:
       "Generador electromagnético de hasta 2.5 teslas que ayuda a los tejidos musculares y el sistema nervioso.",
     Icon: Btl,
-    colorClass: "fill-sky-500",
   },
   {
     title: "Láser de Alta Potencia",
     description:
       "Luz láser Nd:YAG que favorece la cicatrización y el control del dolor al acelerar procesos metabólicos.",
     Icon: Btl,
-    colorClass: "fill-sky-500",
   },
   {
     title: "Tercaterapia Capacitiva y Resistiva",
     description:
       "Radiofrecuencia que genera calor profundo en los tejidos para acelerar el metabolismo y la recuperación.",
     Icon: Btl,
-    colorClass: "fill-sky-500",
   },
   {
     title: "Ondas de Presión (Choque) Radiales",
     description:
       "Ondas sonoras de alta energía que estimulan la liberación de factores de crecimiento esenciales para sanar músculos, tendones y fascias.",
     Icon: Btl,
-    colorClass: "fill-sky-500",
   },
   {
     title: "Ondas de Choque Focales",
     description:
       "Ondas sonoras de alta energía que estimulan la recuperación de tendones, hueso y ayudan en casos de calcificaciones.",
     Icon: Btl,
-    colorClass: "fill-sky-500",
   },
   {
     title: "Deep Osilation",
     description:
       "Impulsos electrostáticos que favorecen la cicatrización y el alivio del dolor en capas profundas.",
     Icon: Physiomed,
-    colorClass: "fill-sky-500",
     customSize: "w-64 h-20",
   },
   {
     title: "MAD UP Pro",
     description:
       "Sistema de entrenamiento y monitoreo que utiliza restricción de flujo sanguíneo para potenciar la fuerza y el desarrollo muscular con menor carga física, generando estrés metabólico controlado",
+    Icon: MadUp,
+    customSize: "w-36 h-20",
   },
   {
     title: "Blaze Pod",
     description:
       "Sistema de entrenamiento visual que mejora la reacción, coordinación y agilidad mediante estímulos de luz.",
+    Icon: BlazePod,
+    customSize: "w-32 h-20",
   },
   {
     title: "Handy Gym",
     description:
       "Dispositivo de fuerza isoinercial que trabaja el músculo eficazmente durante todo el rango de movimiento.",
+    Icon: HandyGym,
   },
 ];
 
