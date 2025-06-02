@@ -1,6 +1,64 @@
 import Image from 'next/image'
-import Illustration from '@/public/images/features-illustration.svg'
-import FeaturesImage from '@/public/images/features-02.png'
+import Illustration from "@/public/images/features-illustration.svg";
+
+const imageGroups = [
+  [
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748826720/WhatsApp_Image_2025-05-18_at_18.39.20_1_riqbta.jpg",
+      height: "h-[24rem]",
+    },
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.20_3_ambcsm.jpg",
+      height: "h-[18rem]",
+    },
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.21_3_nf9opi.jpg",
+      height: "h-[15rem]",
+    },
+  ],
+  [
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.17_2_a5kwgf.jpg",
+      height: "h-[14rem]",
+    },
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748826762/WhatsApp_Image_2025-05-18_at_18.39.17_1_akyrsl.jpg",
+      height: "h-[15rem]",
+    },
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.20_5_bn7oqv.jpg",
+      height: "h-[28rem]",
+    },
+  ],
+  [
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.21_4_ip79qy.jpg",
+      height: "h-[22rem]",
+    },
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748828646/WhatsApp_Image_2025-05-18_at_18.39.17_3_aajvjp.jpg",
+      height: "h-[22rem]",
+    },
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748828646/WhatsApp_Image_2025-05-18_at_18.39.22_2_pf0vir.jpg",
+      height: "h-[13em]",
+    },
+  ],
+  [
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748874316/10_yvrh4m.jpg",
+      height: "h-[24rem]",
+    },
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748874316/12_kfxhjf.jpg",
+      height: "h-[14rem]",
+    },
+    {
+      src: "https://res.cloudinary.com/hitechrehab/image/upload/v1748874316/11_che6ve.jpg",
+      height: "h-[19rem]",
+    },
+  ],
+];
 
 export default function PlataformasEquiposAnalisisEsp() {
   return (
@@ -33,107 +91,23 @@ export default function PlataformasEquiposAnalisisEsp() {
           </div>
           {/* Section content */}
           <div className="max-w-xl mx-auto md:max-w-none grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-[24rem] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748826720/WhatsApp_Image_2025-05-18_at_18.39.20_1_riqbta.jpg"
-                  alt=""
-                />
+            {imageGroups.map((group, groupIndex) => (
+              <div key={groupIndex} className="grid gap-4">
+                {group.map((img, imgIndex) => (
+                  <div
+                    key={img.src}
+                    data-aos="fade-up"
+                    data-aos-delay={100 * (groupIndex * 3 + imgIndex)}
+                  >
+                    <img
+                      src={img.src}
+                      className={`${img.height} max-w-full rounded-lg object-cover`}
+                      alt=""
+                    />
+                  </div>
+                ))}
               </div>
-              <div>
-                <img
-                  className="h-[18rem] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.20_3_ambcsm.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.21_3_nf9opi.jpg"
-                  className="h-[15rem] max-w-full rounded-lg object-cover"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            {/* --------------------------- */}
-
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-[14rem] max-w-full rounded-lg object-cover"
-                  alt=""
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.17_2_a5kwgf.jpg"
-                />
-              </div>
-              <div>
-                <img
-                  className="h-[15rem] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748826762/WhatsApp_Image_2025-05-18_at_18.39.17_1_akyrsl.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-[28rem] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.20_5_bn7oqv.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            {/* --------------------------- */}
-
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-[22rem] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748826763/WhatsApp_Image_2025-05-18_at_18.39.21_4_ip79qy.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-[22rem] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748828646/WhatsApp_Image_2025-05-18_at_18.39.17_3_aajvjp.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-[13em] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748828646/WhatsApp_Image_2025-05-18_at_18.39.22_2_pf0vir.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            {/* --------------------------- */}
-
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-[24rem] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748874316/10_yvrh4m.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-[14rem] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748874316/12_kfxhjf.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-[19rem] max-w-full rounded-lg object-cover"
-                  src="https://res.cloudinary.com/hitechrehab/image/upload/v1748874316/11_che6ve.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
