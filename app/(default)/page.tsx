@@ -9,7 +9,7 @@ import EquiposAltaTech from '@/components/equipos-atla-tech'
 import PlataformasEquiposAnalisisEsp from '@/components/plataformas-equipo-analisis-esp'
 import Pricing from '@/components/pricing'
 import Testimonials from '@/components/testimonials'
-import Resources from '@/components/resources'
+import Videos from "@/components/videos";
 import Cta from '@/components/cta'
 
 export default function Home() {
@@ -21,8 +21,8 @@ export default function Home() {
       <PlataformasEquiposAnalisisEsp />
       {/* <Pricing /> */}
       <Testimonials />
-      <Resources />
+      <Videos />
       <Cta />
     </>
-  )
+  );
 }

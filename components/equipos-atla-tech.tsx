@@ -82,36 +82,35 @@ export default function EquiposAltaTech() {
             </h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-400">
-                Las diversas tecnologías con las que contamos en nuestro equipo aceleran de forma eficaz los procesos de recuperación de nuestros pacientes, acortando de manera significativa los tiempos de tratamiento.
+                Las diversas tecnologías con las que contamos en nuestro equipo
+                aceleran de forma eficaz los procesos de recuperación de
+                nuestros pacientes, acortando de manera significativa los
+                tiempos de tratamiento.
               </p>
             </div>
           </div>
           <div className="group flex justify-between gap-4 mb-24">
             <Image
-              className="object-cover rounded-xl shadow-lg"
+              className="object-cover rounded-xl shadow-lg w-[350px]"
               src={Alta1Image}
-              width={300}
               alt="Header 01"
               priority
             />
             <Image
-              className="object-cover rounded-xl shadow-lg"
+              className="object-cover rounded-xl shadow-lg w-[350px]"
               src={Alta2Image}
-              width={300}
               alt="Header 02"
               priority
             />
             <Image
-              className="object-cover rounded-xl shadow-lg"
+              className="object-cover rounded-xl shadow-lg w-[350px]"
               src={Alta3Image}
-              width={300}
               alt="Header 03"
               priority
             />
           </div>
           {/* Items */}
           <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-3 lg:gap-16 items-start md:max-w-none">
-
             {techItems.map((item, index) => (
               <TechItem
                 key={index}
@@ -123,10 +122,9 @@ export default function EquiposAltaTech() {
                 delay={index * 200}
               />
             ))}
-
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
