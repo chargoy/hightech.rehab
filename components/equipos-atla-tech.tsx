@@ -5,12 +5,12 @@ import Alta2Image from '@/public/images/alta2.jpeg'
 import Alta3Image from '@/public/images/alta3.jpeg'
 import Btl from './logo/btl'
 import Physiomed from './logo/physiomed'
-import { TechItem } from './tech-item'
+import { TechItem, TechItemProps } from "./tech-item";
 import MadUp from "./logo/mad-up";
 import BlazePod from "./logo/blaze-pod";
 import HandyGym from "./logo/handy-gym";
 
-export const techItems = [
+export const techItems: TechItemProps[] = [
   {
     title: "Sistema Super Inductivo",
     description:

@@ -2,7 +2,7 @@ import React from "react";
 import { TbMedicalCross } from "react-icons/tb";
 import { CiMedicalCross } from "react-icons/ci";
 
-type TechItemProps = {
+export type TechItemProps = {
   title: string;
   description: string;
   Icon?: React.ComponentType<{ className?: string }>;
