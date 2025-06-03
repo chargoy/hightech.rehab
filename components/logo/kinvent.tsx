@@ -1,6 +1,8 @@
 import * as React from "react"
 
-function Kinvent(props) {
+function Kinvent(
+  props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       viewBox="0 0 1200 139"
@@ -36,7 +38,7 @@ function Kinvent(props) {
         fillRule="nonzero"
       />
     </svg>
-  )
+  );
 }
 
 export default Kinvent

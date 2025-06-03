@@ -1,6 +1,8 @@
 import * as React from "react"
 
-function Btl(props) {
+function Btl(
+  props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       viewBox="0 0 966 451"
@@ -20,7 +22,7 @@ function Btl(props) {
         fillRule="nonzero"
       />
     </svg>
-  )
+  );
 }
 
 export default Btl
