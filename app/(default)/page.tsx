@@ -11,6 +11,7 @@ import Pricing from '@/components/pricing'
 import Testimonials from '@/components/testimonials'
 import Videos from "@/components/videos";
 import Cta from '@/components/cta'
+import EquiposClasicos from "@/components/equipos-clasicos";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <PressLogos />
       <EquiposAltaTech />
       <PlataformasEquiposAnalisisEsp />
-      {/* <Pricing /> */}
+      <EquiposClasicos />
       <Videos />
       <Testimonials />
       <Cta />
