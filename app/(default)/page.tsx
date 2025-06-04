@@ -20,8 +20,8 @@ export default function Home() {
       <EquiposAltaTech />
       <PlataformasEquiposAnalisisEsp />
       {/* <Pricing /> */}
-      <Testimonials />
       <Videos />
+      <Testimonials />
       <Cta />
     </>
   );
