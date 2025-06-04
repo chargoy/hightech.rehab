@@ -89,7 +89,7 @@ export default function EquiposAltaTech() {
               </p>
             </div>
           </div>
-          <div className="group flex justify-between gap-4 mb-24">
+          <div className="group flex flex-col md:flex-row justify-between gap-4 mb-24 items-center md:items-stretch">
             <Image
               className="object-cover rounded-xl shadow-lg w-[350px]"
               src={Alta1Image}
