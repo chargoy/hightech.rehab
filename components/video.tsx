@@ -13,6 +13,8 @@ const VideoComponent = forwardRef<HTMLVideoElement, VideoComponentProps>(
           src={src}
           loop
           controls
+          muted
+          autoPlay
           playsInline
           preload="metadata"
           className="w-full h-full object-contain"
