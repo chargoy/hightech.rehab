@@ -85,16 +85,22 @@ export default function Example() {
               />
             </dt>
             <dd>
-              Clínica de Rehabilitación <br />
-              y Medicina de la Actividad Física
-              <br />
-              Calzada de Guadalupe #25,
-              <br />
-              Col. Prado Coapa 2a Secc.
-              <br />
-              14357 Tlalpan CDMX
-              <br />
-              México
+              <a
+                href="https://maps.app.goo.gl/JonSLctBoXCzrGkJA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block cursor-pointer hover:text-gray-300"
+              >
+                Clínica de Rehabilitación
+                <br />
+                y Medicina de la Actividad Física
+                <br />
+                Calzada de Guadalupe #25, Col. Prado Coapa 2a Secc.
+                <br />
+                14357 Tlalpan CDMX
+                <br />
+                México
+              </a>
             </dd>
           </div>
           <div className="flex gap-x-4">
@@ -105,7 +111,7 @@ export default function Example() {
             <dd>
               <a
                 href="https://wa.me/525560688843?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20m%C3%A1s%20detalles%20sobre%20los%20servicios%20de%20rehabilitaci%C3%B3n."
-                className="hover:text-gray-900"
+                className="hover:text-gray-300"
               >
                 (55) 6068 8843
               </a>
@@ -116,13 +122,13 @@ export default function Example() {
               <span className="sr-only">Email</span>
               <EnvelopeIcon
                 aria-hidden="true"
-                className="h-7 w-6 text-gray-400"
+                className="h-7 w-6 text-gray-400 hover:text-gray-300"
               />
             </dt>
             <dd>
               <a
                 href="mailto:jaime.carrillo.chargoy@gmail.com"
-                className="hover:text-gray-900"
+                className="hover:text-gray-300"
               >
                 jaime.carrillo.chargoy@gmail.com
               </a>
