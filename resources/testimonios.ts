@@ -1,6 +1,7 @@
 import Testimonio1 from "@/public/images/Testimonio1.jpeg";
 import Testimonio2 from "@/public/images/Testimonio2.jpeg";
 import Testimonio3 from "@/public/images/Testimonio3.jpg";
+import Testimonio4 from "@/public/images/Testimonio4.webp";
 import { Testimonial } from "./Testimonial";
 
 const testimonials: Testimonial[] = [
@@ -15,10 +16,15 @@ const testimonials: Testimonial[] = [
     name: "Norman Somerville",
   },
   {
-    image: Testimonio3,
-    text: "Agradezco profundamente al Dr. Jaime Carrillo por ayudarme a recuperar la movilidad de mi rodilla izquierda. Durante mucho tiempo sufrí un dolor constante, especialmente al subir escaleras, pero gracias a las terapias que me indicó, la mejoría ha sido notable y el dolor prácticamente ha desaparecido. Su atención profesional y dedicada fue clave para mi pronta recuperación.",
-    name: "Isaac Chargoy Vivaldo",
+    image: Testimonio4,
+    text: "Mi experiencia con Hightech Rehab and Sport desde el día uno, me atrevo a decir, ha sido más que buena, sobresaliente. Como bailarina y atleta, es importante contar con un equipo en el que pueda confiar, para mí así ha sido el acompañamiento del Dr. Chargoy y su equipo. Siempre toman como prioridad mi bienestar.",
+    name: "Marlene Coronel",
   },
+  //   {
+  //     image: Testimonio3,
+  //     text: "Agradezco profundamente al Dr. Jaime Carrillo por ayudarme a recuperar la movilidad de mi rodilla izquierda. Durante mucho tiempo sufrí un dolor constante, especialmente al subir escaleras, pero gracias a las terapias que me indicó, la mejoría ha sido notable y el dolor prácticamente ha desaparecido. Su atención profesional y dedicada fue clave para mi pronta recuperación.",
+  //     name: "Isaac Chargoy Vivaldo",
+  //   },
 ];
 
 export default testimonials;

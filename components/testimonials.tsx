@@ -1,13 +1,4 @@
-import Image from 'next/image'
-import TestimonialsImage01 from '@/public/images/testimonial-01.jpg'
-import TestimonialsImage02 from '@/public/images/testimonial-02.jpg'
-import TestimonialsImage03 from '@/public/images/testimonial-03.jpg'
-import TestimonialsImage04 from '@/public/images/testimonial-04.jpg'
-import TestimonialsImage05 from '@/public/images/testimonial-05.jpg'
-import TestimonialsImage06 from '@/public/images/testimonial-06.jpg'
-import TestimonialsImage07 from '@/public/images/testimonial-07.jpg'
-import TestimonialsImage08 from '@/public/images/testimonial-08.jpg'
-import TestimonialsImage09 from '@/public/images/testimonial-09.jpg'
+import Image from "next/image";
 import testimonials from "@/resources/testimonios";
 
 export default function Testimonials() {
@@ -28,8 +19,8 @@ export default function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 font-uncut-sans">
-              ¿Suena bien? Descubre qué eslo que nuestros clientes dicen de
-              nostros
+              ¿Suena bien? Descubre qué es lo que nuestros clientes dicen de
+              nosotros
             </h2>
           </div>
           {/* Testimonials container */}
@@ -47,7 +38,7 @@ export default function Testimonials() {
               >
                 <header className="mb-4">
                   <Image
-                    className="rounded-full shrink-0 object-covert size-14"
+                    className="rounded-full object-covert size-14"
                     src={testimonial.image}
                     alt={`Testimonial ${index + 1}`}
                   />
