@@ -38,7 +38,7 @@ export default function Testimonials() {
               >
                 <header className="mb-4">
                   <Image
-                    className="rounded-full object-covert size-14"
+                    className="rounded-full size-14 object-cover"
                     src={testimonial.image}
                     alt={`Testimonial ${index + 1}`}
                   />
