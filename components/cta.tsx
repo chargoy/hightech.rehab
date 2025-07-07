@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Illustration from '@/public/images/cta-illustration.svg'
+import TrackedLink from "./tracked-link";
 
 export default function Cta() {
   return (
@@ -34,16 +35,17 @@ export default function Cta() {
             </div>
             {/* CTA button */}
             <div className="shrink-0">
-              <a
+              <TrackedLink
                 className="btn-sm text-white bg-linear-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full group shadow-lg"
                 href="https://wa.me/525560688843?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20m%C3%A1s%20detalles%20sobre%20los%20servicios%20de%20rehabilitaci%C3%B3n."
                 target="_blanc"
+                eventName="Contacto por Whatsapp"
               >
                 Escríbenos por WhatsApp{" "}
                 <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                   -&gt;
                 </span>
-              </a>
+              </TrackedLink>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { trackEvent } from "fathom-client";
 import { ReactNode } from "react";
 
 interface ScrollButtonProps
@@ -7,10 +8,12 @@ interface ScrollButtonProps
   targetId: string;
   children: ReactNode;
   offset?: number;
+  fathomEvent?: string;
 }
 
 export default function ScrollButton({
   targetId,
+  fathomEvent,
   offset = 0,
   children,
   ...props
@@ -24,6 +27,10 @@ export default function ScrollButton({
       window.scrollTo({ top, behavior: "smooth" });
 
       history.pushState(null, "", `#${targetId}`);
+
+      if (fathomEvent) {
+        trackEvent(fathomEvent);
+      }
     }
   };
 

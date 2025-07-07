@@ -4,6 +4,7 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 import { JSX, SVGProps } from "react";
+import TrackedLink from "../tracked-link";
 
 interface SocialLink {
   name: string;
@@ -78,11 +79,12 @@ export default function Example() {
               />
             </dt>
             <dd>
-              <a
+              <TrackedLink
                 href="https://maps.app.goo.gl/JonSLctBoXCzrGkJA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block cursor-pointer hover:text-gray-300"
+                eventName="Footer: dirección"
               >
                 Clínica de Rehabilitación
                 <br />
@@ -93,7 +95,7 @@ export default function Example() {
                 14357 Tlalpan CDMX
                 <br />
                 México
-              </a>
+              </TrackedLink>
             </dd>
           </div>
           <div className="flex gap-x-4">
@@ -102,12 +104,13 @@ export default function Example() {
               <PhoneIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
             </dt>
             <dd>
-              <a
+              <TrackedLink
                 href="https://wa.me/525560688843?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20m%C3%A1s%20detalles%20sobre%20los%20servicios%20de%20rehabilitaci%C3%B3n."
                 className="hover:text-gray-300"
+                eventName="Footer: Whatsapp"
               >
                 (55) 6068 8843
-              </a>
+              </TrackedLink>
             </dd>
           </div>
           <div className="flex gap-x-4">
@@ -119,12 +122,13 @@ export default function Example() {
               />
             </dt>
             <dd>
-              <a
+              <TrackedLink
                 href="mailto:jaime.carrillo.chargoy@gmail.com"
                 className="hover:text-gray-300"
+                eventName="Footer: Email"
               >
                 jaime.carrillo.chargoy@gmail.com
-              </a>
+              </TrackedLink>
             </dd>
           </div>
         </dl>

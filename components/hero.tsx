@@ -34,6 +34,7 @@ export default function Hero() {
                   <ScrollButton
                     className="font-medium text-blue-500 inline-flex items-center transition duration-150 ease-in-out group"
                     targetId="plataformas-equipo-analisis-esp"
+                    fathomEvent="Hero Section: Plataformas y equipos de análisis especializados"
                   >
                     Conoce Más{" "}
                     <span className="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
@@ -67,6 +68,7 @@ export default function Hero() {
                 <ScrollButton
                   targetId="equipos-alta-tecnologia"
                   className="btn text-white bg-linear-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group"
+                  fathomEvent="Hero Section: Equipos de Alta Tecnología"
                 >
                   Equipos de Alta Tecnología{" "}
                   <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
@@ -76,6 +78,7 @@ export default function Hero() {
               </div>
               <div>
                 <ScrollButton
+                  fathomEvent="Hero Section: Equipos Clásicos"
                   className="btn text-gray-300 bg-linear-to-t from-gray-800 to-gray-700 hover:to-gray-800 w-full shadow-lg cursor-pointer"
                   targetId="equipos-clasicos"
                 >
