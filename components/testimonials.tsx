@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import testimonials from "@/resources/testimonios";
+import { useLanguage } from "@/components/language-provider";
 
 export default function Testimonials() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative">
       {/* Bg gradient: top */}
@@ -19,8 +24,7 @@ export default function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 font-uncut-sans">
-              ¿Suena bien? Descubre qué es lo que nuestros clientes dicen de
-              nosotros
+              {t.testimonials.title}
             </h2>
           </div>
           {/* Testimonials container */}

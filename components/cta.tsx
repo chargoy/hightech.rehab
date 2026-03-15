@@ -1,8 +1,14 @@
+"use client";
+
 import Image from 'next/image'
 import Illustration from '@/public/images/cta-illustration.svg'
 import TrackedLink from "./tracked-link";
+import { useLanguage } from "@/components/language-provider";
 
 export default function Cta() {
+  const { t } = useLanguage();
+  const section = t.cta;
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-36">
@@ -26,11 +32,10 @@ export default function Cta() {
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
               <h3 className="text-4xl font-bold font-uncut-sans mb-2">
-                Recupera tu movilidad con tecnología de punta
+                {section.title}
               </h3>
               <p className="text-blue-200">
-                Agenda tu primera sesión de valoración y descubre cómo podemos
-                ayudarte a sentirte mejor.
+                {section.description}
               </p>
             </div>
             {/* CTA button */}
@@ -41,7 +46,7 @@ export default function Cta() {
                 target="_blanc"
                 eventName="Contacto por Whatsapp"
               >
-                Escríbenos por WhatsApp{" "}
+                {section.button}{" "}
                 <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                   -&gt;
                 </span>

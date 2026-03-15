@@ -1,5 +1,8 @@
+"use client";
+
 import Image from 'next/image'
 import Illustration from "@/public/images/features-illustration.svg";
+import { useLanguage } from "@/components/language-provider";
 
 const imageGroups = [
   [
@@ -61,6 +64,9 @@ const imageGroups = [
 ];
 
 export default function PlataformasEquiposAnalisisEsp() {
+  const { t } = useLanguage();
+  const section = t.plataformas;
+
   return (
     <section className="relative" id="plataformas-equipo-analisis-esp">
       {/* Bg gradient */}
@@ -80,12 +86,11 @@ export default function PlataformasEquiposAnalisisEsp() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 font-uncut-sans mb-4">
-              Plataformas y Equipos de Análisis Especializados
+              {section.title}
             </h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-400">
-                Plataformas y equipos de análisis cuantitativos y cualitativos
-                para evaluación de avance en nuestros clientes
+                {section.description}
               </p>
             </div>
           </div>

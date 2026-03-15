@@ -3,6 +3,9 @@ import "./css/style.css";
 
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import { cookies } from "next/headers";
+import { LanguageProvider } from "@/components/language-provider";
+import type { Locale } from "@/lib/translations";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,16 +43,23 @@ export const metadata = {
     "Clínica de alta especialidad en rehabilitación física y medicina deportiva.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const cookieStore = await cookies();
+  const localeCookie = cookieStore.get("locale")?.value;
+  const initialLocale: Locale =
+    localeCookie === "en" || localeCookie === "es" ? localeCookie : "es";
+
   return (
-    <html lang="en">
+    <html lang={initialLocale}>
       <body
         className={`${inter.variable} ${uncutsans.variable} font-inter antialiased bg-gray-900 text-gray-100 tracking-tight`}
       >
         <Fathom />
-        <div className="flex flex-col min-h-screen overflow-hidden">
-          {children}
-        </div>
+        <LanguageProvider initialLocale={initialLocale}>
+          <div className="flex flex-col min-h-screen overflow-hidden">
+            {children}
+          </div>
+        </LanguageProvider>
       </body>
     </html>
   );
