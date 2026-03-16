@@ -1,3 +1,5 @@
+"use client";
+
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
@@ -5,6 +7,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { JSX, SVGProps } from "react";
 import TrackedLink from "../tracked-link";
+import { useLanguage } from "@/components/language-provider";
 
 interface SocialLink {
   name: string;
@@ -65,7 +68,9 @@ const navigation: { social: SocialLink[] } = {
   ],
 };
 
-export default function Example() {
+export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-gray-900">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
@@ -86,9 +91,7 @@ export default function Example() {
                 className="block cursor-pointer hover:text-gray-300"
                 eventName="Footer: dirección"
               >
-                Clínica de Rehabilitación
-                <br />
-                y Medicina de la Actividad Física
+                {t.footer.addressLabel}
                 <br />
                 Calzada de Guadalupe #25, Col. Prado Coapa 2a Secc.
                 <br />
@@ -157,8 +160,8 @@ export default function Example() {
           )}
         </div>
         <p className="mt-10 text-center text-sm/6 text-gray-400">
-          &copy; {new Date().getFullYear()} High Tech Rehab & Sports. Todos los
-          derechos reservados.
+          &copy; {new Date().getFullYear()} High Tech Rehab & Sports.{" "}
+          {t.footer.copyright}
         </p>
       </div>
     </footer>
